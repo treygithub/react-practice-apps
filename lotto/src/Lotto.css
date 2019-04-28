@@ -1,0 +1,20 @@
+.Lotto{
+
+}
+.Lotto-title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.Lotto-ball-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.Lotto-btn{
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+margin-left: 42%;
+}
