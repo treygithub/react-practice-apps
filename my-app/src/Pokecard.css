@@ -1,0 +1,40 @@
+.Pokecard-card{
+    border: 2px solid gray;
+    width:250px;
+    padding: 10px;
+    margin:1rem;
+    text-align: center;
+    box-shadow: 7px 10px 12px -5px black;
+    background-color: #e7e8e9;
+    border-radius: 7px;
+}
+
+.Pokecard-divIMG{
+    height: 200px;
+    background-color: #bfc4c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.Pokecard-card img{
+    transition: all ease 800ms;
+}
+.Pokecard-card img:hover{
+transform: scale(1.50);
+background-color: rgb(153, 153, 153);
+border-radius: 50%;
+box-shadow:  7px 10px 12px -5px black;
+}
+
+
+
+constructor(props){
+    super(props){
+
+    }
+    this.state={
+
+    }
+}
