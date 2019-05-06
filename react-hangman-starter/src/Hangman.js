@@ -27,6 +27,9 @@ class Hangman extends Component {
    
   }
   componentDidMount = () => {
+   this.initGame();
+  }
+  initGame=()=>{
     let newWord = randomWord();
     this.setState((state, props) => { 
       return { 
@@ -71,7 +74,7 @@ class Hangman extends Component {
 
   handleReset=()=>{
     let newWord = randomWord();
-    this.setState((state, props) => { 
+    this.setState(() => { 
       return { 
       answer: newWord,
       nWrong: 0, 
