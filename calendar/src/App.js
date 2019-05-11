@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-//import Deck from './Deck'
-import KillingTime  from "./KillingTime";
+import Calendar from './Components/Calendar/Calendar';
 
 function App() {
   return (
     <div className="App">
-    <KillingTime/>
+      <Calendar/>
     </div>
   );
 }
