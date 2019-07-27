@@ -48,18 +48,17 @@ class Calendar extends Component {
       );
   }
 
-let daysInMonth = [];
+  let daysInMonth = [];
 
-for (let d = 1; d <= this.daysInMonth(); d++) {
-    let className = (d == this.currentDay() ? "day current-day": "day");
-    let selectedClass = (d == this.state.selectedDay ? " selected-day " : "")
-    daysInMonth.push(
-        <td key={d} className={className + selectedClass} >
-            <span onClick={(e)=>{this.onDayClick(e, d)}}>{d}</span>
-        </td>
-    );
-}
-
+  for (let d = 1; d <= this.daysInMonth(); d++) {
+      let className = (d == this.currentDay() ? "day current-day": "day");
+      //let selectedClass = (d == this.state.selectedDay ? " selected-day " : "");
+      daysInMonth.push(
+          <td key={d} className={className } >
+              <span>{d}</span>
+          </td>
+      );
+  }
 
   let totalSlots = [...blanks, ...daysInMonth];
   let rows = [];
@@ -79,8 +78,6 @@ for (let d = 1; d <= this.daysInMonth(); d++) {
           rows.push(insertRow);
       }
   });
-  console.log('rows', rows)
-  console.log('cells', cells)
 
   let trElems = rows.map((d, i) => {
       return (
